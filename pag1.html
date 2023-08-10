@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bon Appetit</title>
+    <link rel="icon" type="image/png" href="imagens/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+      
+</head>
+<body>
+    
+    <div id="topo" >
+        
+        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 320"><path fill="#FFB1AB" fill-opacity="1" d="M0,256L14.1,240C28.2,224,56,192,85,160C112.9,128,141,96,169,90.7C197.6,85,226,107,254,138.7C282.4,171,311,213,339,218.7C367.1,224,395,192,424,197.3C451.8,203,480,245,508,245.3C536.5,245,565,203,593,181.3C621.2,160,649,160,678,181.3C705.9,203,734,245,762,256C790.6,267,819,245,847,224C875.3,203,904,181,932,192C960,203,988,245,1016,256C1044.7,267,1073,245,1101,202.7C1129.4,160,1158,96,1186,101.3C1214.1,107,1242,181,1271,186.7C1298.8,192,1327,128,1355,90.7C1383.5,53,1412,43,1426,37.3L1440,32L1440,0L1425.9,0C1411.8,0,1384,0,1355,0C1327.1,0,1299,0,1271,0C1242.4,0,1214,0,1186,0C1157.6,0,1129,0,1101,0C1072.9,0,1045,0,1016,0C988.2,0,960,0,932,0C903.5,0,875,0,847,0C818.8,0,791,0,762,0C734.1,0,706,0,678,0C649.4,0,621,0,593,0C564.7,0,536,0,508,0C480,0,452,0,424,0C395.3,0,367,0,339,0C310.6,0,282,0,254,0C225.9,0,198,0,169,0C141.2,0,113,0,85,0C56.5,0,28,0,14,0L0,0Z"></path></svg>
+        <a href="index.html"><img class="logo" src="imagens/logo.png"></a>
+
+    </div>
+
+    <div class="espaco3"></div>
+
+    <!-- <div class="centralizado"><h1>Deixei a sua Opinião</h1></div> -->
+
+  <div class="alinha">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.7339888889687!2d-46.749641285023145!3d-23.506089084710336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef92caa1ccd6f%3A0xd4f479bcb2388f9e!2sAv.%20El%C3%ADsio%20Cordeiro%20de%20Siqueira%2C%20134%20-%20Jardim%20Santo%20Elias%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2005136-000!5e0!3m2!1spt-BR!2sbr!4v1682029764186!5m2!1spt-BR!2sbr"></iframe>
+
+    <div class="linha"></div>
+
+
+    <script>
+        $(document).ready(function() 
+        { 
+           $("#txttel") .inputmask("(999) 9999-9999"); 
+        });
+       </script>
+
+       <form id="formulario" name="formulario" method="post" action="mailto:sgpaulopaul@outlook.com" enctype="text/plain">
+        <h1>Deixe aqui a sua opinião</h1>
+        <table>
+            <tr>
+                <td class="direita">
+                    <label for="txtsexo">Tipo:</label>
+                </td>
+                <td>   
+                    <input type="radio" id="txtcritica" name="txtopcao" value="C" checked/><spanf>Critica</spanf>
+                    <input type="radio" id="txtsuges" name="txtopcao" value="S" checked /><spanm>Sugestão</spanm>
+                    <input type="radio" id="txtelo" name="txtopcao" value="E" checked /><spanm>Elogio</spanm>
+                </td>
+            </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtnome">Nome completo:</label>
+                       </td>
+                       <td>
+                           <input type="text" name="txtnome" id="txtnome" maxlength="30" placeholder="Preencha o nome completo" required autofocus />
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtsenha">Senha:</label>
+                       </td>
+                       <td>
+                           <input type="password" name="txtsenha" id="txtsenha" maxlength="8" placeholder="Preencha a senha" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtsexo">Sexo:</label>
+                       </td>
+                       <td>   
+                           <input type="radio" id="txtsexof" name="txtsexo" value="F" /><spanf>Mulher</spanf>
+                           <input type="radio" id="txtsexom" name="txtsexo" value="M" checked /><spanm>Homem</spanm>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtnasc">Data de Nascimento:</label>
+                       </td>
+                       <td>   
+                           <input type="date" id="txtnasc" name="txtnasc"/>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtemail">E-mail:</label>
+                       </td>
+                       <td>
+                           <input type="email" name="txtemail" id="txtemail" maxlength="30" required placeholder="seuemail@seuemail.com"/>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtcida">Cidade:</label>
+                       </td>
+                       <td>
+                           <input type="text" name="txtcida" id="txtcida" value="" maxlength="30" placeholder="São Paulo" />
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtuf">UF:</label>
+                       </td>
+                       <td>
+                           <select id="txtuf" name="txtuf">
+                            <option selected value=""></option>
+                               <option value="AC">Acre</option>
+                               <option value="AM">Amazonas</option>
+                               <option value="AL">Alagoas</option>
+                               <option value="AP">Amapá</option>
+                               <option value="BA">Bahia</option>
+                               <option value="CE">Ceará</option>
+                               <option value="DF">Distrito Federal</option>
+                               <option value="ES">Espírito Santo</option>
+                               <option value="GO">Goiás</option>
+                               <option value="MA">Maranhão</option>
+                               <option value="MT">Mato Grosso</option>
+                               <option value="MS">Mato Grosso do Sul</option>
+                               <option value="MG">Minas Gerais</option>
+                               <option value="PA">Pará</option>
+                               <option value="PB">Paráiba</option>
+                               <option value="PE">Pernambuco</option>
+                               <option value="PI">Piauí</option>
+                               <option value="PR">Paraná</option>
+                               <option value="RJ">Rio de Janeiro</option>
+                               <option value="RN">Rio Grande do Norte</option>
+                               <option value="RO">Rondônia</option>
+                               <option value="RR">Roraima</option>
+                               <option value="RS">Rio Grande do Sul</option>
+                               <option value="SC">Santa Catarina</option>
+                               <option value="SE">Sergipe</option>
+                               <option value="SP">São Paulo</option>
+                               <option value="TO">Tocantins</option>
+                           </select>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td class="direita">
+                           <label for="txtele">Telefone:</label>
+                       </td>
+                       <td>
+                            <input type = "text" id = "txttel" name = "txttel" placeholder = "(999) 9999-9999" />
+                       </td>
+                   </tr>
+                   
+                   <tr>
+                       <td class="direita">
+                           <label for="txtcom">Deixe seu comentário:</label>
+                       </td>
+                       <td>
+                           <textarea id="txtcom" name="txtcom" cols="30" rows="4" placeholder="Digite aqui..."></textarea>
+                       </td>
+                   </tr>
+                   <hr/>
+                   <tr>
+                       <td colspan="2" class="centralizado">
+                           <input type="submit" value="Enviar" class="btn0"/>
+                           <input type="reset" value="Limpar" class="btn0" onClick="window.document.getElementById('txtnome').focus();"/>
+                       </td>
+                   </tr>
+               </table>
+               <hr/>
+           </form>
+        </div>
+           <div class="espaco2"></div>
+
+    <footer>
+        <nav>
+                
+            <ul class="teste">
+                <li><a href="#"><img src="imagens/facebook.png" class= "face"/></a></li>
+                <li>&nbsp;&nbsp;</li>
+                <li><a href="pag2.html"><img src="imagens/conta.png" class= "conta"/></a></li>
+                <li>&nbsp;&nbsp;</li>
+                <li><a href="#"><img src="imagens/instagram.png" class= "insta"/></a></li>
+                <li>&nbsp;&nbsp;</li>
+                <li><a href="pag1.html"><img src="imagens/pin.png" class= "pin"/></a></li>
+                
+            </ul>
+        </nav>
+        
+        <p>Siga-nos nas Redes Sociais</p>
+        <p>Bon Appetit - Todos os direitos Reservados - 2023</p>
+      </footer>
+
+</body>
+</html>
